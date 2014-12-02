@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>576</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HHTV Studio</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="LayoutCentralWidget"/>
+  </widget>
+  <widget class="QMenuBar" name="Menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="MenuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionTemplateImport"/>
+    <addaction name="actionTemplateExport"/>
+    <addaction name="ActionQuit"/>
+   </widget>
+   <widget class="QMenu" name="MenuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="ActionAbout"/>
+   </widget>
+   <addaction name="MenuArchivo"/>
+   <addaction name="MenuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="ToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="ActionVideoAudiotest"/>
+   <addaction name="ActionFile"/>
+   <addaction name="ActionWebcam"/>
+   <addaction name="ActionAndroid"/>
+   <addaction name="ActionMic"/>
+   <addaction name="ActionDesktopApp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="DockWidgetSources">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>Lista de Fuentes</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QScrollArea" name="ScrollAreaSources">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>180</width>
+          <height>455</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="LayoutSources"/>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="ActionQuit">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="ActionAbout">
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+  </action>
+  <action name="ActionWebcam">
+   <property name="icon">
+    <iconset theme="camera-web">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Webcam</string>
+   </property>
+   <property name="toolTip">
+    <string>Agregar Webcam</string>
+   </property>
+  </action>
+  <action name="ActionFile">
+   <property name="icon">
+    <iconset theme="applications-multimedia">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Archivo</string>
+   </property>
+   <property name="toolTip">
+    <string>Agregar archivo de audio o video</string>
+   </property>
+  </action>
+  <action name="ActionAndroid">
+   <property name="icon">
+    <iconset theme="pda">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Android</string>
+   </property>
+   <property name="toolTip">
+    <string>Usando IP Webcam</string>
+   </property>
+  </action>
+  <action name="ActionMic">
+   <property name="icon">
+    <iconset theme="audio-input-microphone">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Micrófono</string>
+   </property>
+   <property name="toolTip">
+    <string>Añadir microfono</string>
+   </property>
+  </action>
+  <action name="ActionVideoAudiotest">
+   <property name="text">
+    <string>Audio / Video de prueba</string>
+   </property>
+   <property name="toolTip">
+    <string>Agregar audio / video de prueba</string>
+   </property>
+  </action>
+  <action name="ActionDesktopApp">
+   <property name="icon">
+    <iconset theme="computer">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Aplicación de Escritorio</string>
+   </property>
+  </action>
+  <action name="actionTemplateImport">
+   <property name="text">
+    <string>Importar desde plantilla</string>
+   </property>
+  </action>
+  <action name="actionTemplateExport">
+   <property name="text">
+    <string>Exportar a plantilla</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

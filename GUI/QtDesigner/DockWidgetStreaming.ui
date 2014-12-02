@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DockWidgetStreaming</class>
+ <widget class="QDockWidget" name="DockWidgetStreaming">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="features">
+   <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+  </property>
+  <property name="windowTitle">
+   <string>Streaming</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>386</width>
+         <height>307</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="GroupBoxAudioConfig">
+          <property name="title">
+           <string>Configuración Audio</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="LabelAudioCodec">
+             <property name="text">
+              <string>Códec</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="LabelVideoCodec">
+             <property name="text">
+              <string>Bitrate (kbps)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="ComboBoxAudioCodec">
+             <item>
+              <property name="text">
+               <string>AAC</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="ComboBoxAudioBitrate">
+             <item>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>32</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>40</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>48</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>56</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>64</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>80</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>96</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>112</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>128</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>160</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>192</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>224</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>256</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>320</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GroupBoxVideoConfig">
+          <property name="title">
+           <string>Configuración Video</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="LabelVideoCodec_2">
+             <property name="text">
+              <string>Códec</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="ComboBoxVideoCodec">
+             <item>
+              <property name="text">
+               <string>H264</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="LabelVideoBitrate">
+             <property name="text">
+              <string>Bitrate (kbps)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="SpinBoxVIdeoBitrate">
+             <property name="minimum">
+              <number>100</number>
+             </property>
+             <property name="maximum">
+              <number>3000</number>
+             </property>
+             <property name="singleStep">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GroupBoxConnection">
+          <property name="title">
+           <string>Conexión</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="LabelService">
+             <property name="text">
+              <string>Servicio</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="ComboBoxService">
+             <item>
+              <property name="text">
+               <string>Castalba</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Ustream</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Justin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Youtube</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Otro (personalizado)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="LabelServerURL">
+             <property name="text">
+              <string>URL Servidor</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="LineEditServerURL"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="LineEditServerKey"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="LabelServerKey">
+             <property name="text">
+              <string>Key</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="WidgetButtons" native="true">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="ButtonPlay">
+         <property name="text">
+          <string>Emitir</string>
+         </property>
+         <property name="icon">
+          <iconset theme="media-record"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="ButtonStop">
+         <property name="text">
+          <string>Detener Emisión</string>
+         </property>
+         <property name="icon">
+          <iconset theme="media-playback-stop"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="ButtonDot">
+         <property name="text">
+          <string>Generar Dot</string>
+         </property>
+         <property name="icon">
+          <iconset theme="application-x-designer"/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="ProgressBarStream">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

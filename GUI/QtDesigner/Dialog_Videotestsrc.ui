@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogVideotestsrc</class>
+ <widget class="QDialog" name="DialogVideotestsrc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>403</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Agregar video de prueba</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="SpinBoxHeight">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>2000</number>
+        </property>
+        <property name="value">
+         <number>300</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="SpinBoxAlpha">
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="value">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="SpinBoxWidth">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>2000</number>
+        </property>
+        <property name="value">
+         <number>400</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="LabelWidth">
+        <property name="text">
+         <string>Width</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="ComboBoxPattern">
+        <item>
+         <property name="text">
+          <string>(0): smpte - SMPTE 100% color bars</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(1): Random (television snow)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(2): black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(3): white</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(4): red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(5): green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(6): blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(7): Checkers 1px</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(8): Checkers 2px</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(9): Checkers 4px</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(10): Checkers 8px</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(11): circular</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(12): blink</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(13): smpte75 - SMPTE 75% color bars</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(14): Zone plate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(15): Gamut checkers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(16): Chroma zone plate</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(17): Solid color</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(18): Moving ball</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(19): smpte100 - SMPTE 100% color bars</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(20): Bar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(21): Pinwheel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>(22): Spokes</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LabelFramerate">
+        <property name="text">
+         <string>Framerate</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="LabelPattern">
+        <property name="text">
+         <string>Pattern</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LabelAlpha">
+        <property name="text">
+         <string>Alpha</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LabelHeight">
+        <property name="text">
+         <string>Heigth</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="SpinBoxFramerate">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>30</number>
+        </property>
+        <property name="value">
+         <number>30</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="ButtonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
